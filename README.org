@@ -1,0 +1,3 @@
+#+TITLE: st-lucysue
+
+This repo contains my personal build of the simple terminal.
