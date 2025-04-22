@@ -91,7 +91,7 @@ char *termname = "st";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 
@@ -147,7 +147,7 @@ ResourcePref resources[] = {
 		{ "color15",      STRING,  &colorname[15] },
 		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },
-		{ "cursorColor",  STRING,  &colorname[258] },
+		{ "cursorColor",  STRING,  &colorname[15] },
 		{ "termname",     STRING,  &termname },
 		{ "shell",        STRING,  &shell },
 		{ "minlatency",   INTEGER, &minlatency },
@@ -165,7 +165,7 @@ ResourcePref resources[] = {
  */
 unsigned int defaultfg = 258;
 unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
+unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 257;
 
 /*
